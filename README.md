@@ -37,7 +37,7 @@
 برای نصب دستور زیر را وارد کنید<br>
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/rocket-ap/rocket-ssh/master/install.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/freeDreamIr/rocket-ssh/master/install.sh --ipv4)
 ```
 
 # آپدیت پنل ادمین

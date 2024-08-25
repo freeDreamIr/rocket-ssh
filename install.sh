@@ -45,7 +45,7 @@ userInputs(){
 }
 
 getAppVersion(){
-    version=$(sudo curl -Ls "https://api.github.com/repos/rocket-ap/rocket-ssh/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    version=$(sudo curl -Ls "https://api.github.com/repos/freeDreamIr/rocket-ssh/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     echo $version;
 }
 
@@ -176,7 +176,7 @@ copyPanelRepo(){
         rm -rf /var/www/html/account
     fi
 
-   link=https://raw.githubusercontent.com/rocket-ap/rocket-ssh/main/app.zip
+   link=https://raw.githubusercontent.com/freeDreamIr/rocket-ssh/main/app.zip
 
     if [[ -n "$link" ]]; then
         rm -fr /var/www/html/update.zip
@@ -453,7 +453,7 @@ ENDOFFILE
 installationInfo(){
     clear
     echo -e "\n"
-    bannerText=$(curl -s https://raw.githubusercontent.com/rocket-ap/rocket-ssh/master/rocket-banner.txt)
+    bannerText=$(curl -s https://raw.githubusercontent.com/freeDreamIr/rocket-ssh/master/rocket-banner.txt)
     printf "%s" "$bannerText"
     echo -e "\n"
     printf "Panel Link : $httpProtcol://${ipv4}:$panelPort/login"
